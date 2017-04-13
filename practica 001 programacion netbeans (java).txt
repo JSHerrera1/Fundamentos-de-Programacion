@@ -1,0 +1,101 @@
+Taller N#01
+Nombre: Jonathan Stalin Herrera García
+Paralelo: “A”
+Componente: Fundamentos de Programación
+1. Hacer un algoritmo que calcule e imprima el costo de un terreno rectangular, teniendo como datos la anchura y longitud en metros,
+y el costo del metro cuadrado.
+
+package costo.de.un.terreno;
+import  java.util.Scanner;
+
+
+public class CostoDeUnTerreno {
+    public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);  
+    // Declaracion de variables
+    double costo,axM2,ancho,longuitud;
+    // Solicitud de ingreso de datos por el usuario
+    System.out.println("Ingrese precio de Metro Cuadrado");
+    axM2 = entrada.nextDouble();
+    System.out.println(" Ingrese el ancho del terreno ");
+    ancho=entrada.nextDouble();
+    System.out.println("Ingrese la longuitud del terreno");
+    longuitud=entrada.nextDouble();
+    // Calculo de datos
+    costo =( axM2*(ancho*longuitud));
+    // Muestra de datos o resultado en la pantalla
+    System.out.println(" El costo del terreno es "+costo);
+    }
+    
+}
+   
+
+
+
+
+2.Elabora un programa que pida  la cantidad en horas e imprima su equivalente en minutos, segundos, dias.
+
+
+
+package transformas.horas.a.dias;
+import java.util.Scanner;
+
+ 
+public class TransformasHorasADias {
+
+public static void main(String[] args) {
+Scanner entrada = new Scanner(System.in);
+// Declaracion de variables
+int numHoras, min,segun2;
+double dias;
+//Solicitud de ingrese de datos por parte del usuario
+System.out.println ("Ingrese el número de horas que desea transformar");
+numHoras=entrada.nextInt();
+//cálculo de operaciones 
+min=numHoras*60;
+segun2= numHoras*3600;
+dias= numHoras*0.0416667;
+// muestra de  datos o resultado en pantalla
+System.out.println("La tranformación de horas  en minutos es de :" +min+ " minutos " );
+System.out.println("La transformación de horas en segundos es de :" +segun2+" segundos");
+System.out.println("La transformación de horas en dias es de :" +dias+ " días");
+        
+    }
+    
+}
+    
+     
+
+3. Cálculo de la media en cuetion de estatura.
+
+
+package estatura;
+
+import java.util.Scanner;
+public class Estatura {
+
+
+     /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+          Scanner est = new Scanner (System.in);
+          //creación de variables
+          double esta1,esta2,esta3,esta4,esta5,total,media;
+          //solicitud de datos del usuario
+           System.out.print("Ingrese la estaura del alumno 1:");
+        esta1=est.nextDouble();
+        System.out.print("Ingrese la estaura del alumno 2:");
+        esta2=est.nextDouble ();
+        System.out.print("Ingrese la estaura del alumno 3:");
+        esta3=est.nextDouble ();
+        System.out.print("Ingrese la estaura del alumno 4:");
+        esta4=est.nextDouble ();
+        System.out.print("Ingrese la estaura del alumno 5:");
+        esta5=est.nextDouble ();
+        //Realizo operaciones matemáticas
+        total=esta1+esta2+esta3+esta4+esta5;
+        media=total/5;
+        //Salida de pantalla 
+        System.out.println("la estatura promedio del curso es de: "+media);
